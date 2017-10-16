@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Main {
 
@@ -76,6 +77,7 @@ public class Main {
 		{
 			System.out.println("Juana!!!");
 		}*/
+		/*
 		//Bloque de palacio de fierro
 		if(x == az)
 		{
@@ -100,12 +102,30 @@ public class Main {
 		else
 		{
 			System.out.println("Ni modo!!!");
-		}
+		}*/
 		
-		
+		//Switch de la mexicana que fruta vendía
 		System.out.println("\n\n");
 		
+		String opcion = "Chana";
+		Scanner lector = new Scanner(System.in);
+		opcion = lector.nextLine();
 		
+		switch(opcion)
+		{
+			case "Chana":
+				System.out.println("Chana!!");
+				break;
+			case "Juana":
+				System.out.println("Juana!!");
+				break;
+			case "Chona":
+				System.out.println("Chona!!");
+				break;
+			default:
+				System.out.println("Ninguno!!");
+				break;
+		}
 		
 		
 		
