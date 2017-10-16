@@ -107,8 +107,11 @@ public class Main {
 		//Switch de la mexicana que fruta vendía
 		System.out.println("\n\n");
 		
+		/*
 		String opcion = "Chana";
+		//Instanciar la clase que lee de teclado
 		Scanner lector = new Scanner(System.in);
+		//Leer de teclado hasta dar 'enter'
 		opcion = lector.nextLine();
 		
 		switch(opcion)
@@ -125,7 +128,45 @@ public class Main {
 			default:
 				System.out.println("Ninguno!!");
 				break;
+		}*/
+		
+		//Le da equals el método
+		/*
+		String cadena5 = "Hola";
+		
+		if(cadena5.equals("Hola "))
+		{
+			System.out.println("Son iguales!!");
 		}
+		else
+		{
+			System.out.println("No son iguales!!");
+		}*/
+		
+		//For each
+		/*
+		for(String i: meses)
+		{
+			System.out.print(i);
+			
+		}*/
+		
+		//Bucle while
+		/*
+		int contador = 0;
+		while(contador < meses.length)
+		{
+			System.out.println((contador+1)+" : "+meses[contador]);
+			contador++;
+		}*/
+		
+		CuentaPalabras cPlb = new CuentaPalabras(7);
+		cPlb.cuentaLetras();
+		
+		
+		
+		
+		
 		
 		
 		
