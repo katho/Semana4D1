@@ -1,3 +1,4 @@
+package com.prueba;
 import java.io.IOException;
 import java.util.Scanner;
 
