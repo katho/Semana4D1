@@ -50,5 +50,9 @@ public class Estudiante
 		this.nombre = nombre;
 	}
 	
+	void probar()
+	{
+		System.out.println("Hola, soy un método sin modificador de acceso");
+	}
 	
 }

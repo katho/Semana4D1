@@ -2,6 +2,9 @@ package com.prueba;
 import java.io.IOException;
 import java.util.Scanner;
 
+import com.salon4.llorar.Sacapuntas;
+
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -180,6 +183,7 @@ public class Main {
 			contador++;
 		}*/
 		
+		/*
 		try{
 			
 			contador = 0;
@@ -207,11 +211,22 @@ public class Main {
 			System.out.println("Bloque finally");
 		}
 		System.out.println("Saliendo de la excepción...");
+		*/
 		
+		//Instanciación de la clase, uso del constructor sobrecargado
+		Estudiante estudiHambre = new Estudiante(2, "Juancho");
+		//Obtener los datos de forma segura
+		System.out.println(estudiHambre.getCodigo()+" : "+estudiHambre.getNombre());
+		//Cambiar los valores
+		estudiHambre.setCodigo(4);
+		estudiHambre.setNombre("Gloria");
+		//Obtener los datos de forma segura
+		System.out.println("\n"+estudiHambre.getCodigo()+" : "+estudiHambre.getNombre());
 		
+		//Llamar al mpetodo sin modificador de acceso
+		estudiHambre.probar();
 		
-		
-		
+		Sacapuntas sacaPuntas = new Sacapuntas(456, "filo");
 		
 		
 		
