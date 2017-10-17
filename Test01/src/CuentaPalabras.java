@@ -37,5 +37,7 @@ public class CuentaPalabras
 			}
 		}
 	}
+	//Crear otro método
+	
 
 }

@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -160,8 +161,51 @@ public class Main {
 			contador++;
 		}*/
 		
-		CuentaPalabras cPlb = new CuentaPalabras(7);
-		cPlb.cuentaLetras();
+		//CuentaPalabras cPlb = new CuentaPalabras(7);
+		//cPlb.cuentaLetras();
+		
+		
+		
+		//Bloque try and catch
+		//Controlar excepciones
+		//NullPointer, NumberFormat, OutOfBounds, IO, 
+		//Sin manejo de excepción
+		//Esto se va a descontrolar
+		int contador = 0;
+		/*
+		while(contador < 14)
+		{
+			System.out.println((contador+1)+" : "+meses[contador]);
+			contador++;
+		}*/
+		
+		try{
+			
+			contador = 0;
+			while(contador < 14)
+			{
+				System.out.println((contador+1)+" : "+meses[contador]);
+				contador++;
+			}
+		}catch(ArrayIndexOutOfBoundsException ex){
+			System.out.println("Excepción: "+ex);
+		}
+		catch(NullPointerException ex){
+			System.out.println("Excepción: "+ex);
+		}
+		catch(ClassCastException ex){
+			System.out.println("Excepción: "+ex);
+		}
+		catch(NumberFormatException ex){
+			System.out.println("Excepción: "+ex);
+		}
+		catch(Exception ex){
+			System.out.println("Excepción: "+ex);
+		}finally{
+			//Bloque finally, se ejecuta sin importar si se llegó a la execpción
+			System.out.println("Bloque finally");
+		}
+		System.out.println("Saliendo de la excepción...");
 		
 		
 		
@@ -176,7 +220,6 @@ public class Main {
 		
 		
 		
-		//Float flotante = 0.0f;
 		
 		
 		
