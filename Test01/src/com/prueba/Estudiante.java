@@ -55,4 +55,18 @@ public class Estudiante
 		System.out.println("Hola, soy un método sin modificador de acceso");
 	}
 	
+	
+	
+	 int sumOfDivisors(int n){
+		  int result = 0;
+
+		  for (int i = 1; i <= n; i++) {
+		    if (n % i == 0) {
+		      result += n;
+		    }
+		  }
+
+		  return result;
+		}
+	
 }

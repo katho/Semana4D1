@@ -7,8 +7,15 @@ import com.salon4.llorar.Sacapuntas;
 
 public class Main {
 
+	public static int id = 0;
+	public static long id2 = 0;
+	
+	public static final int valorFinal = 9;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		id = 25;
+		
 		System.out.println("#####");
 		
 		int a  = 1;
@@ -228,21 +235,53 @@ public class Main {
 		
 		Sacapuntas sacaPuntas = new Sacapuntas(456, "filo");
 		
+		//id2++;
+		//System.out.println("\nId del desorden: "+id2);
+		//probarEstatico();
 		
+		//int []time1 = {12, 59};
+		//int []time2 = {14, 23};
 		
+		//System.out.println(sumOfDivisors(13));
+		//System.out.println(isEarlier(time1, time2));
 		
+	}//Fin del main
+	
+	
+	
+	//Método estático
+	public static void probarEstatico()
+	{
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		id = 99999;
+		System.out.println("\n\n"+id);
+		//main(null);
 	}
+	
+	static int sumOfDivisors(int n)
+	{
+		  int result = 0;
+		  if((n < 15) && (n > 0))
+		  {
+			  for (int i = 1; i <= n; i++) 
+			  {
+				    if (n % i == 0) 
+				    {
+				      result += n;
+				    }
+			  } 
+		  }
+		  
+
+		 return result;
+	}
+	
+	static boolean isEarlier(int[] time1, int[] time2) {
+		  if ( (time1[0] < time2[0]) && (time1[0] < time2[0]) && (time1[1] < time2[1]) && (time1[1] < time2[1]))   {
+			    return true;
+			  }
+			  return false;
+			}
+
 
 }
