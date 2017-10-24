@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="UTF-8">
+        <title>Mi primer App Web</title>
+    </head>
+    <body>
+        <H1>Formas</H1>
+        <div>
+                <p>telephone: <input type="tel" placeholder="(lada) número local" 
+                    id="telefono" autocomplete="on" autofocus/></p>
+                <p>search: <input type="search" placeholder="Busque aquí"/></p>
+                <p>url: <input type="url" placeholder="Inserte una URL"/></p>
+                <p>email: <input type="email" placeholder="Escriba un email válido" required/></p>
+                <p>datetime: <input type="datetime"/></p>
+                <p>date: <input type="date"/></p>
+                <p>month: <input type="month"/></p>
+                <p>week: <input type="week"/></p>
+                <p>time: <input type="time"/></p>
+                <p>datetime-local: <input type="datetime-local"/></p>
+                <p>number: <input type="number" max="10" min="0" value="5" /></p>
+                <p>range: <input type="range" max="10" min="0" value="5"/></p>
+                <p>color: <input type="color" /></p>
+
+                <p contenteditable="true">This is a paragraph. It is editable. Try to change this text.</p>
+                
+                <p contenteditable="false">This is a paragraph. It is not editable. Try to change this text.</p>
+        </div>
+        <div>
+                <form >
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                      <option value="Internet Explorer">
+                      <option value="Firefox">
+                      <option value="Chrome">
+                      <option value="Opera">
+                      <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+                  </form>
+                  
+
+                  <form>
+                        <datalist id="browsers2">
+                                <option value="Internet Explorer">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                    <input list="browsers2" name="browserDos"/>
+
+                  </form>
+        </div>
+
+
+    </body>
+</html>

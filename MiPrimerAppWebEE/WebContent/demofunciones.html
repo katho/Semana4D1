@@ -1,0 +1,93 @@
+<!-- Hola, soy un comentario multilínea, todo lo que 
+escribes aquí no se mostrará en pantalla, así que estás seguro ;) -->
+<!-- Defino el tipo de documento -->
+<!DOCTYPE html>
+<!-- Defino el lenguaje regional -->
+<html lang="es">
+    <!-- Esto es una cabecera -->
+        <head>
+            <meta http-equiv="Expires" content="0">
+            <meta http-equiv="Last-Modified" content="0">
+            <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+            <meta http-equiv="Pragma" content="no-cache">
+            <!-- Puedo definir referencias a hojas de estilo aquí -->
+            <!-- Establezco la codificación de caracteres para que entienda
+            de acentos (´) y eñes (ñ) -->
+            <meta charset="UTF-8">
+            <!-- Este título se ve en el encabezado del navegador -->
+            <!-- Estilos -->
+            <style type="text/css">
+            .alert {
+                padding: 20px;
+                background-color: #f44336;
+                color: white;
+                opacity: 1;
+                transition: opacity 0.6s;
+                margin-bottom: 15px;
+            }
+
+            .alert.success {background-color: #4CAF50;}
+            .alert.info {background-color: #2196F3;}
+            .alert.warning {background-color: #ff9800;}
+            
+            </style>
+        <title>Mi primer App Web</title>
+
+    </head>
+    <body>
+        <!-- Este botón llama a la función de mi archivo JS -->    
+            <button onclick="miFuncion()" >Rompa aquí</button>
+            <!-- Este botón llama a la función bucles de mi archivo JS -->    
+            <button onclick="bucles()" >Corra el bucle</button>
+            <!-- Este botón llama a la función buclesWhile de mi archivo JS -->    
+            <button onclick="buclesWhile()" >Corra el bucle while</button><br>
+            <!-- Este botón llama a la función buclesDoWhile de mi archivo JS -->    
+            <button onclick="buclesDoWhile()" >Corra el bucle do while</button><br>
+            <!-- Este botón llama a la función operacionesAritmeticas de mi archivo JS -->    
+            <button onclick="operacionesAritmeticas()" >Aritmética</button><br>
+            <!-- Este botón llama a la función operacionesLogicas de mi archivo JS -->    
+            <button onclick="operacionesLogicas()" >Operaciones Lógicas</button><br>
+            <!-- Este botón llama a la función manejarArreglos de mi archivo JS -->    
+            <button onclick="manejarArreglos()" >Operaciones con arreglos</button><br>
+            <!-- Este botón llama a la función misAlerts de mi archivo JS -->    
+            <button onclick="misAlerts()" >Enviar alerta</button><br>
+            <!-- Este botón llama a la función manejarObjeto de mi archivo JS -->    
+            <button onclick="manejarObjeto()" >manejarObjeto</button>
+
+            <!-- ALertas personalizadas -->
+            <div class="alert success">                  
+                <strong>Success!</strong> Indicates a successful or positive action.
+                <span class="closebtn">&times;</span>
+            </div>
+            <div class="alert info">                  
+                <strong>Info</strong> Info.
+                <span class="closebtn">&times;</span>
+            </div>
+            <div class="alert warning">                  
+                <strong>Warning!</strong> Warning!
+                <span class="closebtn">&times;</span>
+            </div>
+        <!-- Haciendo referencia a mi archivo JS -->
+        <script type="text/javascript" src="js/demo01.js"></script>
+        <script type="text/javascript">
+        //Busca el elemento al que se le de click
+        var close = document.getElementsByClassName("closebtn");
+        //Contador
+        var i;
+        //Ciclo for para trabajar sobre el elemento al que se le dio click
+        for (i = 0; i < close.length; i++) 
+        {
+            //Al elemento se le da un evento
+            close[i].onclick = function()
+            {
+                //Obtener el elemento padre
+                var div = this.parentElement;
+                //Efecto de desparecer o cambiar opacidad
+                div.style.opacity = "0";
+                //Controlar la opacidad con tiempo
+                setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+        }
+        </script>
+    </body>
+</html>
